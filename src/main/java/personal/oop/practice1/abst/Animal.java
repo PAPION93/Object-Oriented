@@ -32,6 +32,6 @@ public abstract class Animal {
      * Smell.
      */
     public void smell() {
-        System.out.println("동물 지린내");
+        System.out.println("Animal smell");
     }
 }

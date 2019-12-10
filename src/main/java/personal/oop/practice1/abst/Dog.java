@@ -20,7 +20,7 @@ public abstract class Dog extends Animal {
     @Override
     public void smell() {
         // super.smell();
-        System.out.println("개 지린내");
+        System.out.println("Dog smell");
     }
 
     public abstract void bark();

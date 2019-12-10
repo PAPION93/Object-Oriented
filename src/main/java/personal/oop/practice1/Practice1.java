@@ -66,7 +66,7 @@ public class Practice1 {
         birdEagle.twitter();
         System.out.println();
 
-        System.out.println("--------------------------------------------------");
+        System.out.println("-----------------------1111---------------------------");
         FeedGround ground = new FeedGround(navi);
         ground.feed();
 
@@ -74,6 +74,7 @@ public class Practice1 {
         birdGround.feed();
         System.out.println();
 
+        // 오버라이딩을 통해 자식이 동작을 구현했다면 부모는 그동작을 사용가능>????
         System.out.println("--------------------------------------------------");
         Pomeranian pomeranian = new Pomeranian("흰둥이");
         pomeranian.bark();
