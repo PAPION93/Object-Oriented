@@ -18,6 +18,11 @@ public class Shepherd implements BlackFur{
     }
 
     @Override
+    public void wash() {
+        System.out.println("[Shepherd] wash.");
+    }
+
+    @Override
     public void blackMolting() {
         System.out.println("[Shepherd] blackMolting.");
     }

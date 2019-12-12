@@ -12,7 +12,7 @@ public class Bathroom {
 
     // 기능을 표현하는 메소드
     public void wash(){
-        System.out.println(animal + " wash !");
+        animal.wash();
     }
 
 }

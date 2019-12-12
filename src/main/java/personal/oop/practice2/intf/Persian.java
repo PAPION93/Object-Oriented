@@ -15,4 +15,9 @@ public class Persian implements Cat{
     public void sleep() {
         System.out.println("[Persian] sleep");
     }
+
+    @Override
+    public void wash() {
+        System.out.println("[Persian] wash");
+    }
 }

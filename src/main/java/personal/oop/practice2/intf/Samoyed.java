@@ -18,6 +18,11 @@ public class Samoyed implements WhiteFur {
     }
 
     @Override
+    public void wash() {
+        System.out.println("[Samoyed] wash");
+    }
+
+    @Override
     public void whiteMolting() {
         System.out.println("[Samoyed] whiteMolting.");
     }

@@ -6,4 +6,5 @@ public interface Animal {
 
     public abstract void sleep();
 
+    void wash();
 }

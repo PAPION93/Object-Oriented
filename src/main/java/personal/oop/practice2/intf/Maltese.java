@@ -24,4 +24,9 @@ public class Maltese implements WhiteFur {
     public void whiteMolting() {
         System.out.println("[Maltese] whiteMolting.");
     }
+
+    @Override
+    public void wash() {
+        System.out.println("[Maltese] wash.");
+    }
 }

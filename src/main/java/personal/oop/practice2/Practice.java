@@ -13,9 +13,16 @@ public class Practice {
     public static void main(String[] args) {
 
         // abstract
-        System.out.println("-------- Abstract ");
+        System.out.println("-------- Abstract 1");
         personal.oop.practice2.abst.Maltese maltese = new Maltese();
         maltese.bark();
+        System.out.println();
+
+        System.out.println("-------- Abstract 2. 이렇게 쓰는일은 언제일까?");
+        personal.oop.practice2.abst.Animal malteseanimal = new Maltese();
+        malteseanimal.eat();
+        malteseanimal.sleep();
+        //malteseanimal.bark();     Animal 에 bark()는 선언되어있지 않음.
         System.out.println();
 
         // interface
@@ -23,9 +30,11 @@ public class Practice {
         System.out.println("-------- Dog Interface");
         Dog jangguni = new personal.oop.practice2.intf.Maltese();
         Dog mme = new Shepherd();
+
         jangguni.eat();
         jangguni.sleep();
         jangguni.bite();
+
         mme.eat();
         System.out.println();
 
@@ -34,9 +43,9 @@ public class Practice {
         spd.blackMolting();
         System.out.println();
 
-        System.out.println("-------- Shepherd Class");
-        Shepherd realspd = new Shepherd();
-        realspd.test();
+        System.out.println("-------- go Bathroom");
+        Bathroom br = new Bathroom(jangguni);
+        br.wash();
         System.out.println();
     }
 }
