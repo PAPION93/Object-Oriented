@@ -3,12 +3,17 @@ package personal.oop.practice3.company.intf;
 public class Employer implements Worker {
 
     @Override
+    public void goCompany(){
+        System.out.println("사장 회사간다.");
+    }
+
+    @Override
     public void work() {
         System.out.println("사장도 일한다.");
     }
 
-    public void paySalary(){
-        System.out.println("월급준다.");
+    public void payBonus(String name) {
+        System.out.println(name + "! 서비스 준다.");
     }
 
 }
