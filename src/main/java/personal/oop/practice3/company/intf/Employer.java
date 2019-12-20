@@ -13,7 +13,7 @@ public class Employer implements Worker {
     }
 
     public void payBonus(String name) {
-        System.out.println(name + "! 서비스 준다.");
+        System.out.println(name + "에게 서비스 준다.");
     }
 
 }

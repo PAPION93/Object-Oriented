@@ -14,7 +14,7 @@ public class Employee implements Worker {
 
     @Override
     public void goCompany() {
-        System.out.println( name + "회사간다.");
+        System.out.println( name + " 회사간다.");
     }
 
     @Override
