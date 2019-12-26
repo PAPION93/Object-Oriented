@@ -23,7 +23,6 @@ MANIFEST.MF
 ### IntelliJ IDEA ###
 .idea
 .idea/
-.idea\.gitignore
 *.iws
 *.iml
 *.ipr
