@@ -1,17 +1,34 @@
 package personal.oop.practice3.company;
 
-import personal.oop.practice3.company.intf.Employee;
-import personal.oop.practice3.company.intf.Employer;
+import personal.oop.practice3.company.intf.*;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        Employer ceo = new Employer();
+        Worker jun = new Employee();
+        Worker cho = new Employee();
+        Worker ceo = new Employer();
 
-        Employee jun = new Employee("jun");
+        jun.setName("Jun");
+        cho.setName("Cho");
+        ceo.setName("Park");
+
         jun.goCompany();
-        jun.work();
+        cho.goCompany();
+        ceo.goCompany();
 
-        ceo.payBonus(jun.getName());
+        ResearchFloor rsh = new ResearchFloor();
+        //rsh.enterCompany(jun);
+        //rsh.checkWorker();
+
+        jun.work();
+        cho.work();
+        ceo.work();
+
+        Employer park = new Employer();
+        park.setName("Park");
+        park.payBonus(jun);
+        park.payBonus(cho);
     }
 }
