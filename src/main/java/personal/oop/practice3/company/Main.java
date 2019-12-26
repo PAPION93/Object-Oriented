@@ -18,6 +18,7 @@ public class Main {
         cho.goCompany();
         ceo.goCompany();
 
+        // 확인할것 1
         ResearchFloor rsh = new ResearchFloor();
         //rsh.enterCompany(jun);
         //rsh.checkWorker();
@@ -26,6 +27,7 @@ public class Main {
         cho.work();
         ceo.work();
 
+        // 확인할것 2
         Employer park = new Employer();
         park.setName("Park");
         park.payBonus(jun);
