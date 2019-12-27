@@ -1,12 +1,21 @@
 package personal.oop.practice3.company.intf;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Employer implements Worker {
 
     private String name;
+    private List<Worker> workers = new ArrayList<>();
+
+    public Employer(String name){
+        this.name = name;
+    }
 
     @Override
-    public void goCompany(){
-        System.out.println(name + " 회사간다.");
+    public void leaveHome(){
+        System.out.println(name + " 집을 떠난다.");
     }
 
     @Override
@@ -14,18 +23,23 @@ public class Employer implements Worker {
         System.out.println(name + "도 일한다.");
     }
 
-    public void payBonus(Worker worker) {
-        System.out.println(this.name + "은 " + worker.getName() + "에게 보너스 준다.");
+    public void rememberWorkers(List<Worker> workers){
+        this.workers = workers;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void payBonus() {
+        Collections.shuffle(workers);
+        System.out.println("이번달은 " + workers.get(1).getName() + " 너 보너스!");
+    }
+
+    public void stopWork() {
+        for (Worker worker : workers){
+            System.out.println(worker.getName() +  "야 오늘은 여기까지해!");
+        }
     }
 
     @Override
     public String getName() {
         return name;
     }
-
 }
