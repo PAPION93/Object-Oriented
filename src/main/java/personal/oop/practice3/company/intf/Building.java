@@ -15,5 +15,5 @@ public interface Building extends Company {
     /**
      * Check worker.
      */
-    void checkWorker();
+    void checkWorker(Employer employer);
 }

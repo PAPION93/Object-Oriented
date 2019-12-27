@@ -8,8 +8,12 @@ import java.util.List;
  */
 public class ResearchFloor implements Building {
 
-    private List<Worker> workers = new ArrayList<>();
+    private List<Worker> workers;
     private Employer ceo;
+
+    public ResearchFloor() {
+        this.workers = new ArrayList<>();
+    }
 
     @Override
     public boolean comeToWork(Worker worker) {
@@ -31,9 +35,9 @@ public class ResearchFloor implements Building {
     }
 
     @Override
-    public void checkWorker() {
+    public void checkWorker(Employer employer) {
         for (Worker worker : workers) {
-            System.out.println(worker.getName() + " 출근 확인");
+            System.out.println(employer.getName() + ": " + worker.getName() + "씨 출근 잘했어요?");
         }
     }
 }

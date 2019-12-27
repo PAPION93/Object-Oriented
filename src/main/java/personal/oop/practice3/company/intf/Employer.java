@@ -11,7 +11,7 @@ import java.util.Random;
 public class Employer implements Worker {
 
     private String name;
-    private Status type;
+    //private Status type;
     private List<Worker> workers;
 
     /**
@@ -21,13 +21,13 @@ public class Employer implements Worker {
      */
     public Employer(String name) {
         this.name = name;
-        this.type = Status.HOME;
+        //this.type = Status.HOME;
         this.workers = new ArrayList<>();
     }
 
     @Override
     public void leaveHome() {
-        type = Status.LEAVE;
+        //type = Status.LEAVE;
         System.out.println(name + " 집을 떠난다.");
     }
 
@@ -49,9 +49,8 @@ public class Employer implements Worker {
      * Pay bonus.
      */
     public void payBonus() {
-        Collections.shuffle(workers);
-        //workers.get(new Random().nextInt(1 - 10));
-        System.out.println("이번달은 " + workers.get(1).getName() + " 너 보너스!");
+        Worker happyWorker = workers.get(new Random().nextInt(1));
+        System.out.println("이번달은 " + happyWorker.getName() + " 너 보너스!");
     }
 
     /**

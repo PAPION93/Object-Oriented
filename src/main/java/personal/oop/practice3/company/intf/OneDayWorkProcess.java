@@ -3,7 +3,7 @@ package personal.oop.practice3.company.intf;
 /**
  * The type One day work process.
  *
- * @author cho_jeong_ha
+ * @author Son_Jun
  * @project oop -practice
  * @update 2019 -12-27
  */
@@ -13,13 +13,13 @@ public class OneDayWorkProcess {
      * Instantiates a new One day work process.
      */
     public OneDayWorkProcess() {
-
     }
 
     /**
      * Processing.
      */
     public void processing() {
+
         Worker jun = new Employee("Jun");
         Worker cho = new Employee("Cho");
         Worker ceo = new Employer("Park");
@@ -35,8 +35,8 @@ public class OneDayWorkProcess {
         rsh.comeToWork(cho);
         rsh.comeToWork(ceo);
 
-        System.out.println("-----------출근 완료");
-        rsh.checkWorker();
+        System.out.println("-----------출근 확인");
+        rsh.checkWorker(((Employer) ceo));
 
         System.out.println("-----------업무 시작");
         jun.work();
