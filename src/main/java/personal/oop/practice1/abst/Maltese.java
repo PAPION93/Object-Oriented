@@ -1,4 +1,4 @@
-package personal.oop.practice2.abst;
+package personal.oop.practice1.abst;
 
 /**
  * The type Maltese.

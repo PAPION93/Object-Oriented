@@ -1,6 +1,6 @@
-package personal.oop.practice3.company;
+package personal.oop.practice2;
 
-import personal.oop.practice3.company.intf.OneDayWorkProcess;
+import personal.oop.practice2.intf.OneDayWorkProcess;
 
 /**
  * The type Main.

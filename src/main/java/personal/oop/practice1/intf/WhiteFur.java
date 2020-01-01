@@ -1,4 +1,4 @@
-package personal.oop.practice2.intf;
+package personal.oop.practice1.intf;
 
 /**
  * The interface White fur.

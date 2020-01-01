@@ -1,4 +1,4 @@
-package personal.oop.practice3.company.intf;
+package personal.oop.practice2.intf;
 
 import java.util.ArrayList;
 import java.util.List;
