@@ -1,29 +1,19 @@
 package personal.oop.practice3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Player {
 
-    private int playerCount;
-    private List<Player> playerList;
+    private String name;
+    private Weapon weapon;
 
-    public Player(int playerCount) {
-
-        this.playerCount = playerCount;
-        this.playerList = new ArrayList<>();
-
+    public Player(String name) {
+        this.name = name;
     }
 
-    /**
-     * 플레이어 준비완료
-     */
-    public void ReadyForBattle(){
-
-        for (int i = 0; i < playerCount; i++) {
-            playerList.add("guest");
-        }
-
+    public void setName(String name) {
+        this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
 }
