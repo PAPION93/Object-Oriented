@@ -3,11 +3,13 @@ package personal.oop.practice3;
 public class Main {
     public static void main(String[] args) {
 
+        // 게임 로비
+        Lobby lobby = new Lobby();
+
         // 플레이어 생성
         Player player = new Player(5);
-        player.enterToLobby();
+        player.ReadyForBattle();
 
-        Lobby lobby = new Lobby();
 
 
 

@@ -6,7 +6,7 @@ package personal.oop.practice3;
  */
 public class Lobby {
 
-    public Lobby(int playerCount) {
+    public Lobby() {
 
     }
 }

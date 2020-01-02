@@ -16,12 +16,12 @@ public class Player {
     }
 
     /**
-     * 플레이어들은 로비로 입장
+     * 플레이어 준비완료
      */
-    public void enterToLobby(){
+    public void ReadyForBattle(){
 
         for (int i = 0; i < playerCount; i++) {
-            playerList.add();
+            playerList.add("guest");
         }
 
     }
