@@ -20,19 +20,26 @@ public class Lobby {
     /**
      * 플레이어 준비완료
      */
-    public void ReadyForBattle() {
+    public List<Player> readyForBattle() {
 
         for (int i = 1; i <= playerCount; i++) {
             players.add(new Player("guest" + i));
         }
 
+        return players;
+
     }
 
     /**
      * 전투장으로 이동
+     *
+     * @return
      */
-    public void goToBattleGround(BattleGround map) {
+    public List<Player> goToBattleGround(BattleGround map, List<Player> players) {
+
         map.enterToBattleGround(players);
+        return players;
+
     }
 
 }

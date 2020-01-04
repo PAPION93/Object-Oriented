@@ -1,6 +1,5 @@
 package personal.oop.practice3;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
 import personal.oop.practice3.intf.PlayBehavior;
 
 import java.util.Random;
@@ -9,9 +8,9 @@ import java.util.Random;
 public class Player implements PlayBehavior {
 
     private String name;
-    private String weapon;
 
     private WeaponEnum weaponEnum;
+    private WeaponEnum weapon;
 
     public Player(String name) {
         this.name = name;
@@ -24,8 +23,8 @@ public class Player implements PlayBehavior {
      */
     @Override
     public void selectWeapon(Player player) {
-        setWeapon(weaponEnum.values()[getRandom()].getName());
-        System.out.println(player.getName() + "는 " + player.getWeapon() + "를 선택했다.");
+        setWeapon(weaponEnum.values()[getRandom()]);
+        System.out.println(player.getName() + "가 " + player.getWeapon() + "을(를) 선택했다.");
     }
 
     /**
@@ -46,11 +45,11 @@ public class Player implements PlayBehavior {
         return name;
     }
 
-    public void setWeapon(String weapon) {
+    public void setWeapon(WeaponEnum weapon) {
         this.weapon = weapon;
     }
 
-    public String getWeapon() {
+    public WeaponEnum getWeapon() {
         return weapon;
     }
 

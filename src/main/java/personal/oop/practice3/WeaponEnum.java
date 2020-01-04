@@ -5,14 +5,22 @@ public enum WeaponEnum {
     PAPER("보자기"),
     SCISSORS("가위");
 
-    private WeaponEnum(String name){
+    private String name;
+
+    WeaponEnum(String name) {
         this.name = name;
     }
 
-    private String name;
-
     public String getName() {
         return name;
+    }
+
+    public static WeaponEnum getWeaponEnum(String weaponType) {
+        for (WeaponEnum weaponEnum : WeaponEnum.values()) {
+            if (weaponEnum.name() == weaponType)
+                return weaponEnum;
+        }
+        return null;
     }
 
 }
