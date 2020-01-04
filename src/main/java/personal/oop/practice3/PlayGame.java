@@ -14,8 +14,5 @@ public class PlayGame {
         // 배틀그라운드 입장
         lobby.goToBattleGround(new Erangel());
 
-        // 각 플레이어들 가위 바위 보 선택
-        //Player player = new Player();
-
     }
 }

@@ -1,5 +1,7 @@
 package personal.oop.practice3;
 
+import personal.oop.practice3.intf.BattleGround;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +24,6 @@ public class Lobby {
 
         for (int i = 1; i <= playerCount; i++) {
             players.add(new Player("guest" + i));
-//            players.add(new Player().setName("guest" + i));
         }
 
     }

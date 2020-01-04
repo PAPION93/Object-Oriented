@@ -1,5 +1,7 @@
 package personal.oop.practice3;
 
+import personal.oop.practice3.intf.BattleGround;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +15,11 @@ public class Erangel implements BattleGround {
 
     @Override
     public void enterToBattleGround(List<Player> players) {
+
+        System.out.println("에란겔 입장");
+
         for (Player player : players) {
-            System.out.println(player.getName() + " 배틀그라운드 입장");
+            player.selectWeapon(player);
         }
 
     }

@@ -1,4 +1,6 @@
-package personal.oop.practice3;
+package personal.oop.practice3.intf;
+
+import personal.oop.practice3.Player;
 
 import java.util.List;
 
