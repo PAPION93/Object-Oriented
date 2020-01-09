@@ -1,4 +1,5 @@
 package personal.oop.practice3.intf;
+
 import personal.oop.practice3.Player;
 
 public interface PlayBehavior {
